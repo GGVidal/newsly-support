@@ -26,11 +26,13 @@ git push -u origin main
 
 ## Enable Pages
 
-GitHub → repo **Settings → Pages** → **Deploy from a branch** → branch **main**, folder **/ (root)**.
+GitHub → repo [**GGVidal/newsly-support**](https://github.com/GGVidal/newsly-support) → **Settings → Pages** → **Deploy from a branch** → branch **main**, folder **/ (root)**.
 
-Your Support URL:
+After the first deploy, your Support URL will be:
 
-`https://YOUR_USER.github.io/newsly-support/`
+**https://ggvidal.github.io/newsly-support/**
+
+(GitHub shows the exact URL on the Pages settings screen.)
 
 ## Email
 
