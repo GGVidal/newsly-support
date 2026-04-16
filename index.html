@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Newsly — support and contact" />
+  <title>Newsly — Support</title>
+  <style>
+    :root {
+      --bg: #0d0d12;
+      --card: #1e1e2a;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --accent: #ff6b35;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1.25rem 3rem;
+    }
+    .wrap {
+      max-width: 36rem;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    p { margin: 0 0 1rem; }
+    p:last-child { margin-bottom: 0; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Newsly</h1>
+      <p class="tagline">Smarter, faster news — personalised feed, audio, and more.</p>
+      <p>
+        Need help, found a bug, or have feedback? We read every message.
+      </p>
+      <div class="label">Contact</div>
+      <p>
+        <a href="mailto:support@newsly.gg">support@newsly.gg</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
