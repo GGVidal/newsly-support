@@ -59,20 +59,57 @@
       color: var(--muted);
       margin-bottom: 0.35rem;
     }
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
+    li { margin-bottom: 0.5rem; }
+    li:last-child { margin-bottom: 0; }
+    li strong { color: var(--text); font-weight: 600; }
+    .stack { display: flex; flex-direction: column; gap: 1.25rem; }
+    .plan-note {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card">
-      <h1>Newsly</h1>
-      <p class="tagline">Smarter, faster news — personalised feed, audio, and more.</p>
-      <p>
-        Need help, found a bug, or have feedback? We read every message.
-      </p>
-      <div class="label">Contact</div>
-      <p>
-        <a href="mailto:gabrielvidalgondim@gmail.com">gabrielvidalgondim@gmail.com</a>
-      </p>
+    <div class="stack">
+      <div class="card">
+        <h1>Newsly</h1>
+        <p class="tagline">Smarter, faster news — personalised feed, audio, and more.</p>
+        <div class="label">How to use the app</div>
+        <h2>Basics</h2>
+        <ul>
+          <li><strong>Home</strong> — Your main feed. The more you read, skip, or bookmark, the better Newsly can match stories to your interests.</li>
+          <li><strong>Discover</strong> — Browse news by category when you want to explore beyond your feed.</li>
+          <li><strong>Bookmarks</strong> — Tap the bookmark icon on an article to save it. Open the Bookmarks tab to see everything you saved.</li>
+          <li><strong>Article</strong> — Open any story for the full view. Use listen / play where available to hear the article read aloud.</li>
+          <li><strong>Voice search</strong> — Where the app offers it, use voice to search the news instead of typing (microphone permission may be required).</li>
+          <li><strong>Profile</strong> — Streaks, stats, and app settings.</li>
+        </ul>
+        <p class="plan-note">
+          Some features (for example extra AI tools or daily limits) may depend on your plan — check in the app for what is included.
+        </p>
+      </div>
+      <div class="card">
+        <div class="label">Support</div>
+        <p>
+          Need help, found a bug, or have feedback? We read every message.
+        </p>
+        <p>
+          <a href="mailto:gabrielvidalgondim@gmail.com">gabrielvidalgondim@gmail.com</a>
+        </p>
+      </div>
     </div>
   </div>
 </body>
