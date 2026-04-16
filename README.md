@@ -1,29 +1,40 @@
-# Newsly — Support (GitHub Pages)
+# Newsly support site (GitHub Pages)
 
-Static support page for App Store / Play Store **Support URL**.
+Static files for a **separate** GitHub repository (keep them out of the Expo app binary — they are only for hosting).
 
-## Publish on GitHub Pages
+Because this folder lives inside the Newsly app repo, **do not run `git init` here.** Copy it to its own directory first.
 
-1. Create a repository on GitHub (e.g. `newsly-support`) and push this folder:
+## One-time: create the GitHub repo and push
 
-   ```bash
-   cd newsly-support
-   git init
-   git add index.html .nojekyll README.md
-   git commit -m "Add support page"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USER/newsly-support.git
-   git push -u origin main
-   ```
+```bash
+# From the Newsly repo root
+cp -r support-pages ../newsly-support
+cd ../newsly-support
+git init
+git add index.html privacy.html .nojekyll README.md
+git commit -m "Add support page"
+git branch -M main
+gh repo create newsly-support --public --source=. --remote=origin --push
+```
 
-2. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch **main**, folder **/ (root)**.
+If `gh` is not set up, create an empty `newsly-support` repo on GitHub, then:
 
-3. Your Support URL will be:
+```bash
+git remote add origin https://github.com/YOUR_USER/newsly-support.git
+git push -u origin main
+```
 
-   `https://YOUR_USER.github.io/newsly-support/`
+## Enable Pages
 
-   (GitHub shows the exact URL on the Pages settings page after the first deploy.)
+GitHub → repo [**GGVidal/newsly-support**](https://github.com/GGVidal/newsly-support) → **Settings → Pages** → **Deploy from a branch** → branch **main**, folder **/ (root)**.
+
+After the first deploy:
+
+- **Support:** **https://ggvidal.github.io/newsly-support/**
+- **Privacy policy (App Store / Play):** **https://ggvidal.github.io/newsly-support/privacy.html**
+
+(GitHub shows the exact site URL on the Pages settings screen.)
 
 ## Email
 
-Update the `mailto:` and visible address in `index.html` if you change the support inbox.
+Edit `index.html` if you change the support address.
